@@ -15,10 +15,6 @@ Contributors:
     Sierra Wireless - initial API and implementation
 -->
 <configuration>
-    
-    <!-- WARNING !! This file will be only used by maven !
-     if you want to use it in eclipse(or any orther IDE) use -Dlogback.configurationFile=logback-test-leshan-core.xml -->
-
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
 			<pattern>%d %p %C{1.} [%t] %m%n</pattern>
