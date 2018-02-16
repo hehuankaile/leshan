@@ -67,6 +67,16 @@ Contributors:
     </dependencies>
 
     <build>
+    	<resources>
+    		<!-- add logback config near the uber-jar file -->
+    		<resource>
+				<directory>${project.basedir}</directory>
+				<targetPath>${project.build.directory}</targetPath>
+				<includes>
+					<include>logback-config.xml</include>
+				</includes>
+			</resource>
+		</resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.felix</groupId>
