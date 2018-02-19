@@ -21,10 +21,11 @@ import static org.junit.Assert.assertEquals;
 import java.nio.ByteBuffer;
 import java.util.Date;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.eclipse.leshan.tlv.Tlv.TlvType;
 import org.junit.Test;
 
-public class TlvEncoderTest {
+public class TlvEncoderTest extends LeshanCoreBaseTest {
 
     @Test
     public void encode_short() {

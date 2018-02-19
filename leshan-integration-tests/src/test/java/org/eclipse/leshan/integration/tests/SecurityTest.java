@@ -43,7 +43,7 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class SecurityTest {
+public class SecurityTest extends LeshanIntegrationBaseTest {
 
     protected SecureIntegrationTestHelper helper = new SecureIntegrationTestHelper();
 

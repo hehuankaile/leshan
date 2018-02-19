@@ -46,6 +46,7 @@ import org.eclipse.leshan.core.request.ReadRequest;
 import org.eclipse.leshan.core.request.WriteAttributesRequest;
 import org.eclipse.leshan.core.request.WriteRequest;
 import org.eclipse.leshan.core.request.WriteRequest.Mode;
+import org.eclipse.leshan.server.californium.LeshanServerCfBaseTest;
 import org.eclipse.leshan.server.registration.Registration;
 import org.eclipse.leshan.server.registration.Registration.Builder;
 import org.eclipse.leshan.tlv.Tlv;
@@ -57,7 +58,7 @@ import org.junit.Test;
 /**
  * Unit tests for {@link CoapRequestBuilder}
  */
-public class CoapRequestBuilderTest {
+public class CoapRequestBuilderTest extends LeshanServerCfBaseTest {
 
     private static LwM2mModel model;
     private static LwM2mNodeEncoder encoder;

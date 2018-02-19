@@ -18,10 +18,11 @@ package org.eclipse.leshan.core.node.codec;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.eclipse.leshan.core.model.ResourceModel.Type;
 import org.junit.Test;
 
-public class Lwm2mValueConverterTest {
+public class Lwm2mValueConverterTest extends LeshanCoreBaseTest {
 
     @Test
     public void testConvertValueParsesHexString() {

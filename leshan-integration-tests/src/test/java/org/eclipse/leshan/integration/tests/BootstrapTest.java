@@ -21,7 +21,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class BootstrapTest {
+public class BootstrapTest extends LeshanIntegrationBaseTest {
 
     private final BootstrapIntegrationTestHelper helper = new BootstrapIntegrationTestHelper();
 

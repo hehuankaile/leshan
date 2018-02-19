@@ -34,10 +34,11 @@ import org.eclipse.leshan.core.response.BootstrapWriteResponse;
 import org.eclipse.leshan.core.response.ErrorCallback;
 import org.eclipse.leshan.core.response.LwM2mResponse;
 import org.eclipse.leshan.core.response.ResponseCallback;
+import org.eclipse.leshan.server.LeshanServerCoreBaseTest;
 import org.eclipse.leshan.server.impl.DefaultBootstrapSession;
 import org.junit.Test;
 
-public class BootstrapHandlerTest {
+public class BootstrapHandlerTest extends LeshanServerCoreBaseTest {
 
     @Test
     public void error_if_not_authorized() {

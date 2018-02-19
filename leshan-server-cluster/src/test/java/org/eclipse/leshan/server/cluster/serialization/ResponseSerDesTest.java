@@ -23,11 +23,12 @@ import java.util.Map;
 import org.eclipse.leshan.Link;
 import org.eclipse.leshan.core.response.DiscoverResponse;
 import org.eclipse.leshan.core.response.LwM2mResponse;
+import org.eclipse.leshan.server.cluster.LeshanServerClusterBaseTest;
 import org.junit.Test;
 
 import com.eclipsesource.json.JsonObject;
 
-public class ResponseSerDesTest {
+public class ResponseSerDesTest extends LeshanServerClusterBaseTest {
 
     @Test
     public void ser_and_des_discover_response() throws Exception {

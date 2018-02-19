@@ -20,6 +20,7 @@ import static org.junit.Assert.*;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.eclipse.leshan.core.node.ObjectLink;
 import org.eclipse.leshan.util.Hex;
 import org.junit.Test;
@@ -29,7 +30,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Unit test for {@link TlvDecoder}
  */
-public class TlvDecoderTest {
+public class TlvDecoderTest extends LeshanCoreBaseTest {
 
     private static Logger LOG = LoggerFactory.getLogger(TlvDecoderTest.class);
 

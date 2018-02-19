@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.eclipse.leshan.core.model.ObjectModel;
 import org.eclipse.leshan.core.model.json.ObjectModelSerDes;
 import org.junit.Assert;
@@ -30,7 +31,7 @@ import com.eclipsesource.json.JsonArray;
 import com.eclipsesource.json.JsonValue;
 import com.eclipsesource.json.WriterConfig;
 
-public class ObjectModelSerDesTest {
+public class ObjectModelSerDesTest extends LeshanCoreBaseTest {
 
     @Test
     public void des_ser_must_be_equals() throws IOException {

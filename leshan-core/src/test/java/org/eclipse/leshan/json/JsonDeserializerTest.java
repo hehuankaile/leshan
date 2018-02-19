@@ -16,12 +16,13 @@
  *******************************************************************************/
 package org.eclipse.leshan.json;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class JsonDeserializerTest {
+public class JsonDeserializerTest extends LeshanCoreBaseTest {
 
     private Logger log = LoggerFactory.getLogger(getClass());
 

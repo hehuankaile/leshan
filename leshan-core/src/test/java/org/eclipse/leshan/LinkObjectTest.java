@@ -22,7 +22,7 @@ import java.util.Map;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class LinkObjectTest {
+public class LinkObjectTest extends LeshanCoreBaseTest {
 
     @Test
     public void parse_with_some_attributes() {

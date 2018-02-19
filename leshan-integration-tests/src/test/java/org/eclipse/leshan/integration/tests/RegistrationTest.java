@@ -60,7 +60,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RegistrationTest {
+public class RegistrationTest extends LeshanIntegrationBaseTest {
 
     protected IntegrationTestHelper helper = new IntegrationTestHelper();
 

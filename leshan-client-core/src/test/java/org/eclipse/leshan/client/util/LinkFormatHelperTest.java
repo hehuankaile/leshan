@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.eclipse.leshan.Link;
+import org.eclipse.leshan.client.LeshanClientCoreBaseTest;
 import org.eclipse.leshan.client.resource.BaseInstanceEnabler;
 import org.eclipse.leshan.client.resource.LwM2mInstanceEnabler;
 import org.eclipse.leshan.client.resource.LwM2mObjectEnabler;
@@ -31,7 +32,7 @@ import org.eclipse.leshan.core.model.ObjectLoader;
 import org.eclipse.leshan.core.model.ObjectModel;
 import org.junit.Test;
 
-public class LinkFormatHelperTest {
+public class LinkFormatHelperTest extends LeshanClientCoreBaseTest {
 
     @Test
     public void encode_objectModel_to_linkObject_without_root_path() {

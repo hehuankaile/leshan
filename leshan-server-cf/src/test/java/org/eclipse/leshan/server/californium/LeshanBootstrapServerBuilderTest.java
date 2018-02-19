@@ -27,7 +27,7 @@ import org.eclipse.leshan.server.security.SecurityInfo;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LeshanBootstrapServerBuilderTest {
+public class LeshanBootstrapServerBuilderTest extends LeshanServerCfBaseTest {
 
     private LeshanBootstrapServerBuilder builder;
     private LeshanBootstrapServer server;

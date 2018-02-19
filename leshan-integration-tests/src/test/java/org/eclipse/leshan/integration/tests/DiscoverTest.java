@@ -29,7 +29,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DiscoverTest {
+public class DiscoverTest extends LeshanIntegrationBaseTest {
 
     private IntegrationTestHelper helper = new IntegrationTestHelper();
 

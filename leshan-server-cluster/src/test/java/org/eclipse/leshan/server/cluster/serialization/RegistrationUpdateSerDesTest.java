@@ -25,10 +25,11 @@ import org.eclipse.leshan.Link;
 import org.eclipse.leshan.LwM2m;
 import org.eclipse.leshan.core.request.BindingMode;
 import org.eclipse.leshan.core.request.Identity;
+import org.eclipse.leshan.server.cluster.LeshanServerClusterBaseTest;
 import org.eclipse.leshan.server.registration.RegistrationUpdate;
 import org.junit.Test;
 
-public class RegistrationUpdateSerDesTest {
+public class RegistrationUpdateSerDesTest extends LeshanServerClusterBaseTest {
 
     @Test
     public void ser_and_des_are_equals() throws Exception {

@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.eclipse.leshan.core.model.LwM2mModel;
 import org.eclipse.leshan.core.model.ObjectLoader;
 import org.eclipse.leshan.core.model.ObjectModel;
@@ -48,7 +49,7 @@ import org.junit.Test;
 /**
  * Unit tests for {@link LwM2mNodeDecoder}
  */
-public class LwM2mNodeDecoderTest {
+public class LwM2mNodeDecoderTest extends LeshanCoreBaseTest {
 
     private static LwM2mModel model;
     private static LwM2mNodeDecoder decoder;

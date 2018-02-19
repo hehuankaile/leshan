@@ -37,7 +37,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DeleteTest {
+public class DeleteTest extends LeshanIntegrationBaseTest {
 
     private final IntegrationTestHelper helper = new IntegrationTestHelper();
 
@@ -61,10 +61,8 @@ public class DeleteTest {
     @Test
     public void delete_created_object_instance() throws InterruptedException {
         // create ACL instance
-        helper.server.send(
-                helper.getCurrentRegistration(),
-                new CreateRequest(2, new LwM2mObjectInstance(0, Arrays.asList(new LwM2mResource[] { LwM2mSingleResource
-                        .newIntegerResource(0, 123) }))));
+        helper.server.send(helper.getCurrentRegistration(), new CreateRequest(2, new LwM2mObjectInstance(0,
+                Arrays.asList(new LwM2mResource[] { LwM2mSingleResource.newIntegerResource(0, 123) }))));
 
         // try to delete this instance
         DeleteResponse response = helper.server.send(helper.getCurrentRegistration(), new DeleteRequest(2, 0));
@@ -78,10 +76,8 @@ public class DeleteTest {
     @Test
     public void cannot_delete_resource_of_created_object_instance() throws InterruptedException {
         // create ACL instance
-        helper.server.send(
-                helper.getCurrentRegistration(),
-                new CreateRequest(2, new LwM2mObjectInstance(0, Arrays.asList(new LwM2mResource[] { LwM2mSingleResource
-                        .newIntegerResource(0, 123) }))));
+        helper.server.send(helper.getCurrentRegistration(), new CreateRequest(2, new LwM2mObjectInstance(0,
+                Arrays.asList(new LwM2mResource[] { LwM2mSingleResource.newIntegerResource(0, 123) }))));
 
         // try to delete this instance
         DeleteResponse response = helper.server.send(helper.getCurrentRegistration(), new DeleteRequest("/2/0/0"));

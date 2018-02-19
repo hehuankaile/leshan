@@ -24,6 +24,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.eclipse.leshan.core.model.LwM2mModel;
 import org.eclipse.leshan.core.model.ObjectLoader;
 import org.eclipse.leshan.core.node.LwM2mMultipleResource;
@@ -42,7 +43,7 @@ import org.junit.Test;
 /**
  * Unit tests for {@link LwM2mNodeEncoder}
  */
-public class LwM2mNodeEncoderTest {
+public class LwM2mNodeEncoderTest extends LeshanCoreBaseTest {
 
     private static LwM2mModel model;
     private static LwM2mNodeEncoder encoder;

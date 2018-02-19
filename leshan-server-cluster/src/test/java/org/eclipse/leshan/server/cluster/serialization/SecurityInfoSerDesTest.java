@@ -26,12 +26,12 @@ import java.security.spec.ECPoint;
 import java.security.spec.ECPublicKeySpec;
 import java.security.spec.KeySpec;
 
-import org.eclipse.leshan.server.cluster.serialization.SecurityInfoSerDes;
+import org.eclipse.leshan.server.cluster.LeshanServerClusterBaseTest;
 import org.eclipse.leshan.server.security.SecurityInfo;
 import org.eclipse.leshan.util.Hex;
 import org.junit.Test;
 
-public class SecurityInfoSerDesTest {
+public class SecurityInfoSerDesTest extends LeshanServerClusterBaseTest {
 
     @Test
     public void security_info_psk_ser_des_then_equal() {

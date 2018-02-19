@@ -22,7 +22,7 @@ import org.eclipse.leshan.server.impl.InMemorySecurityStore;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LeshanServerBuilderTest {
+public class LeshanServerBuilderTest extends LeshanServerCfBaseTest {
 
     private LeshanServerBuilder builder;
     private LeshanServer server;

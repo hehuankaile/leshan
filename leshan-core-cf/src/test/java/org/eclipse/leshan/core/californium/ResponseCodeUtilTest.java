@@ -19,7 +19,7 @@ import org.eclipse.californium.core.coap.CoAP.ResponseCode;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ResponseCodeUtilTest {
+public class ResponseCodeUtilTest extends LeshanCoreCfBaseTest {
 
     @Test
     public void known_coap_code_to_known_lwm2m_Code() {

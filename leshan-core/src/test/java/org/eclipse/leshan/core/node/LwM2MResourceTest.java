@@ -20,10 +20,11 @@ import static org.junit.Assert.*;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.eclipse.leshan.LeshanCoreBaseTest;
 import org.eclipse.leshan.core.model.ResourceModel.Type;
 import org.junit.Test;
 
-public class LwM2MResourceTest {
+public class LwM2MResourceTest extends LeshanCoreBaseTest {
 
     @Test
     public void two_identical_strings_are_equal() {

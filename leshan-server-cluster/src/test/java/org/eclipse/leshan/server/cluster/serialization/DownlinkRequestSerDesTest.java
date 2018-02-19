@@ -15,8 +15,7 @@
  *******************************************************************************/
 package org.eclipse.leshan.server.cluster.serialization;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.*;
 
 import org.eclipse.leshan.ObserveSpec;
 import org.eclipse.leshan.core.node.LwM2mResource;
@@ -32,11 +31,12 @@ import org.eclipse.leshan.core.request.ReadRequest;
 import org.eclipse.leshan.core.request.WriteAttributesRequest;
 import org.eclipse.leshan.core.request.WriteRequest;
 import org.eclipse.leshan.core.request.WriteRequest.Mode;
+import org.eclipse.leshan.server.cluster.LeshanServerClusterBaseTest;
 import org.junit.Test;
 
 import com.eclipsesource.json.JsonObject;
 
-public class DownlinkRequestSerDesTest {
+public class DownlinkRequestSerDesTest extends LeshanServerClusterBaseTest {
 
     @Test
     public void ser_and_des_read_request() throws Exception {

@@ -48,7 +48,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class WriteTest {
+public class WriteTest extends LeshanIntegrationBaseTest {
     private IntegrationTestHelper helper = new IntegrationTestHelper();
 
     @Before

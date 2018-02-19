@@ -34,7 +34,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FailingTest {
+public class FailingTest extends LeshanIntegrationBaseTest {
 
     public IntegrationTestHelper helper = new IntegrationTestHelper() {
         @Override

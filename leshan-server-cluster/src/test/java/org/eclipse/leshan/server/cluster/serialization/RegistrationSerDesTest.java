@@ -25,10 +25,11 @@ import java.util.Map;
 
 import org.eclipse.leshan.Link;
 import org.eclipse.leshan.core.request.Identity;
+import org.eclipse.leshan.server.cluster.LeshanServerClusterBaseTest;
 import org.eclipse.leshan.server.registration.Registration;
 import org.junit.Test;
 
-public class RegistrationSerDesTest {
+public class RegistrationSerDesTest extends LeshanServerClusterBaseTest {
 
     @Test
     public void ser_and_des_are_equals() throws Exception {

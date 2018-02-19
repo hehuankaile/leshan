@@ -30,6 +30,7 @@ import org.eclipse.leshan.core.observation.Observation;
 import org.eclipse.leshan.core.request.Identity;
 import org.eclipse.leshan.core.request.ObserveRequest;
 import org.eclipse.leshan.server.californium.CaliforniumRegistrationStore;
+import org.eclipse.leshan.server.californium.LeshanServerCfBaseTest;
 import org.eclipse.leshan.server.californium.ObserveUtil;
 import org.eclipse.leshan.server.model.StandardModelProvider;
 import org.eclipse.leshan.server.registration.Registration;
@@ -37,7 +38,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ObservationServiceTest {
+public class ObservationServiceTest extends LeshanServerCfBaseTest {
 
     Request coapRequest;
     LwM2mPath target;

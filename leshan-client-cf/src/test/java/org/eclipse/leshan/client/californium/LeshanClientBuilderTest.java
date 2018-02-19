@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LeshanClientBuilderTest {
+public class LeshanClientBuilderTest extends LeshanClientCfBaseTest {
 
     private LeshanClientBuilder builder;
     private LeshanClient client;

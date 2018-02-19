@@ -23,7 +23,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ObserveSpecTest {
+public class ObserveSpecTest extends LeshanCoreBaseTest {
 
     @Test
     public void serialize_cancel_param() {

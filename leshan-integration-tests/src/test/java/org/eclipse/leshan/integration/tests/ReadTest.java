@@ -33,7 +33,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ReadTest {
+public class ReadTest extends LeshanIntegrationBaseTest {
 
     public IntegrationTestHelper helper = new IntegrationTestHelper();
 

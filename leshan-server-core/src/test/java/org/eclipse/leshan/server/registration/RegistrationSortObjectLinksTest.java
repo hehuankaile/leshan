@@ -22,10 +22,11 @@ import java.net.UnknownHostException;
 
 import org.eclipse.leshan.Link;
 import org.eclipse.leshan.core.request.Identity;
+import org.eclipse.leshan.server.LeshanServerCoreBaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class RegistrationSortObjectLinksTest {
+public class RegistrationSortObjectLinksTest extends LeshanServerCoreBaseTest {
 
     @Test
     public void sort_link_object_on_get() throws UnknownHostException {
